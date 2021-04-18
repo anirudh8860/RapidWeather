@@ -1,0 +1,20 @@
+PODS:
+  - McPicker (3.0.0)
+  - VegaScrollFlowLayout (1.1)
+
+DEPENDENCIES:
+  - McPicker
+  - VegaScrollFlowLayout
+
+SPEC REPOS:
+  trunk:
+    - McPicker
+    - VegaScrollFlowLayout
+
+SPEC CHECKSUMS:
+  McPicker: ba38be56a8194faa5249eca4226c364eed628044
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
+
+PODFILE CHECKSUM: 1d49020a7badad5e6341bf56fcce327e437cc71b
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CurrentLocationForecast" representedClassName="CurrentLocationForecast" syncable="YES" codeGenerationType="class">
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="index" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="temperatureC" optional="YES" attributeType="String"/>
+        <attribute name="temperatureF" optional="YES" attributeType="String"/>
+        <attribute name="weatherImage" optional="YES" attributeType="Binary"/>
+        <relationship name="currentLocationWeather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CurrentLocationWeather" inverseName="currentLocationForecast" inverseEntity="CurrentLocationWeather"/>
+    </entity>
+    <entity name="CurrentLocationWeather" representedClassName="CurrentLocationWeather" syncable="YES" codeGenerationType="class">
+        <attribute name="aqi" optional="YES" attributeType="String"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="humidity" optional="YES" attributeType="String"/>
+        <attribute name="isDay" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="temperatureC" optional="YES" attributeType="String"/>
+        <attribute name="temperatureF" optional="YES" attributeType="String"/>
+        <attribute name="weatherCondition" optional="YES" attributeType="String"/>
+        <attribute name="weatherImage" optional="YES" attributeType="Binary"/>
+        <attribute name="windSpeedKph" optional="YES" attributeType="String"/>
+        <attribute name="windSpeedMph" optional="YES" attributeType="String"/>
+        <relationship name="currentLocationForecast" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CurrentLocationForecast" inverseName="currentLocationWeather" inverseEntity="CurrentLocationForecast"/>
+    </entity>
+    <elements>
+        <element name="CurrentLocationForecast" positionX="-4323.213134765625" positionY="7343.678527832031" width="128" height="163"/>
+        <element name="CurrentLocationWeather" positionX="-4829.389892578125" positionY="7298.913024902344" width="128" height="223"/>
+    </elements>
+</model>

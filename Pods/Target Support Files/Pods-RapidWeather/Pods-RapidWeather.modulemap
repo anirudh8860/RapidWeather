@@ -1,0 +1,6 @@
+framework module Pods_RapidWeather {
+  umbrella header "Pods-RapidWeather-umbrella.h"
+
+  export *
+  module * { export * }
+}

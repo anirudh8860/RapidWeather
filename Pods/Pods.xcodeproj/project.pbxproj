@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143E2D710E124DBB6CCE935E92C6924C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		18613FA31EE1C5E2058D957E559306DB /* Pods-RapidWeather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E339FFACE445FD39204791D0B0832E /* Pods-RapidWeather-dummy.m */; };
+		1E0C73A80A9F07F78DD476B48CBEB6AE /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70812E67B88BD777223535EBCE02C4B1 /* VegaScrollFlowLayout.swift */; };
+		1EF4C8F62BE00557CC54FE5CA6CCDC80 /* McPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C839DA81424DB2932E9C2D258F2F1B /* McPicker.swift */; };
+		37C47729A94B2BA55CEF409A40A06377 /* McPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108E726AF4B36A68D6A278EDD55091C7 /* McPicker-dummy.m */; };
+		7113990EADDCBCF82B361D88FCED2953 /* VegaScrollFlowLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F85B99F79D9063B48A0BD504D2C0D090 /* VegaScrollFlowLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E1AE6A104A2BAA6F8CF3AACC0783690 /* McPickerBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5C0B7053557CECF753761E989776ED /* McPickerBarButtonItem.swift */; };
+		934098640F45C8DD945A8F3194C046CD /* Pods-RapidWeather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F974BDED0E5C4CAFC32A26639FC4EB82 /* Pods-RapidWeather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E044835C1683A9015FDE042CD44314 /* McPickerPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922528E58807471B8E6167FD564EFC9 /* McPickerPopoverViewController.swift */; };
+		B24DAD907879F3AAFBE5FB4752DEF0E5 /* McTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCABE3469ECFF88F1BD3BB72D9168A6 /* McTextField.swift */; };
+		B293982645E0D238781C47BB6D4459D9 /* VegaScrollFlowLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C68B7B5CB365C812D2C4BBA1B30BFC /* VegaScrollFlowLayout-dummy.m */; };
+		CCE88557C4CEEE6508709923C34BFC5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		E190ED8DF63A3F6AF59E92C202883A1E /* McPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9441D4FC13BE10533ED59BD8A5340A27 /* McPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC440EC35B0A23101AF250A1345F53F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		F3673FB47D791C6AD8458098ED212171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D0EA54B2E106AB4BA9AE8706E7BD70D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6738B61255F4E5F64DBC885C2955BE0F;
+			remoteInfo = VegaScrollFlowLayout;
+		};
+		F908882578503617AF57001403CB77CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FB907AAFDB0530AEA6CA76A05AE3BBC;
+			remoteInfo = McPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C68B7B5CB365C812D2C4BBA1B30BFC /* VegaScrollFlowLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VegaScrollFlowLayout-dummy.m"; sourceTree = "<group>"; };
+		0D67DF63C5657601E4E6D4F85F8481BA /* Pods-RapidWeather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RapidWeather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FD30E91D64AAA21E406CD4CA611014A /* VegaScrollFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.debug.xcconfig; sourceTree = "<group>"; };
+		108E726AF4B36A68D6A278EDD55091C7 /* McPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "McPicker-dummy.m"; sourceTree = "<group>"; };
+		1130A6C6ADF922AD29E5529D21F025A8 /* McPicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "McPicker-Info.plist"; sourceTree = "<group>"; };
+		17A80FD93A3F5E9A02BF43BFDFE67B40 /* McPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.release.xcconfig; sourceTree = "<group>"; };
+		1B11AF28FB2116EF4B6E72E15E8511FE /* VegaScrollFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VegaScrollFlowLayout.framework; path = VegaScrollFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2041C42796A53D6FAB1832CCE5453B80 /* Pods-RapidWeather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RapidWeather.modulemap"; sourceTree = "<group>"; };
+		2922528E58807471B8E6167FD564EFC9 /* McPickerPopoverViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerPopoverViewController.swift; path = McPicker/Classes/McPickerPopoverViewController.swift; sourceTree = "<group>"; };
+		5CCABE3469ECFF88F1BD3BB72D9168A6 /* McTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McTextField.swift; path = McPicker/Classes/McTextField.swift; sourceTree = "<group>"; };
+		6F24348FD125E0F5068E13ECDD87695D /* VegaScrollFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VegaScrollFlowLayout.release.xcconfig; sourceTree = "<group>"; };
+		70812E67B88BD777223535EBCE02C4B1 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VegaScrollFlowLayout.swift; path = VegaScroll/Classes/VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		771A3043080B67BC2D1F44C9DC2546D0 /* VegaScrollFlowLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VegaScrollFlowLayout.modulemap; sourceTree = "<group>"; };
+		78E339FFACE445FD39204791D0B0832E /* Pods-RapidWeather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RapidWeather-dummy.m"; sourceTree = "<group>"; };
+		8FD674EFD6F242EA79F88787E7CD6B56 /* McPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = McPicker.modulemap; sourceTree = "<group>"; };
+		909554D82E31B0C4F4DEDF1BAD2BE177 /* Pods-RapidWeather-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RapidWeather-frameworks.sh"; sourceTree = "<group>"; };
+		90DDCF24E4C988C2144B7622397C85BB /* Pods-RapidWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RapidWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		9441D4FC13BE10533ED59BD8A5340A27 /* McPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-umbrella.h"; sourceTree = "<group>"; };
+		978909736F92A0D633842472D577F1D8 /* McPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = McPicker.framework; path = McPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE34CED04C94E9215194ADED0B33ED7 /* Pods-RapidWeather-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RapidWeather-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6E617DDE382BA57F872B488C27DFF14 /* VegaScrollFlowLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-prefix.pch"; sourceTree = "<group>"; };
+		C0ED2D56896F7E481541077BA4CAD4A4 /* McPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = McPicker.debug.xcconfig; sourceTree = "<group>"; };
+		C1C839DA81424DB2932E9C2D258F2F1B /* McPicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPicker.swift; path = McPicker/Classes/McPicker.swift; sourceTree = "<group>"; };
+		CFE5C7BC0883ED2612680195C3F482EE /* McPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "McPicker-prefix.pch"; sourceTree = "<group>"; };
+		D15157640AC250DE2D7F0B2BE150E668 /* Pods-RapidWeather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RapidWeather-acknowledgements.plist"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D7D4316679E805587EC922CC9651B504 /* VegaScrollFlowLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VegaScrollFlowLayout-Info.plist"; sourceTree = "<group>"; };
+		DD5C0B7053557CECF753761E989776ED /* McPickerBarButtonItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = McPickerBarButtonItem.swift; path = McPicker/Classes/McPickerBarButtonItem.swift; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EEFB48FB9F4BE99CB982F74BDA4770B3 /* Pods_RapidWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RapidWeather.framework; path = "Pods-RapidWeather.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71550E74E034AC3872DA2DF1529CF36 /* Pods-RapidWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RapidWeather.release.xcconfig"; sourceTree = "<group>"; };
+		F85B99F79D9063B48A0BD504D2C0D090 /* VegaScrollFlowLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VegaScrollFlowLayout-umbrella.h"; sourceTree = "<group>"; };
+		F974BDED0E5C4CAFC32A26639FC4EB82 /* Pods-RapidWeather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RapidWeather-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EF9FFD3932EBA0A78EB0F601D1918C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE88557C4CEEE6508709923C34BFC5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31959D1C00A926BA91A8FA3C418A9712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC440EC35B0A23101AF250A1345F53F6 /* Foundation.framework in Frameworks */,
+				143E2D710E124DBB6CCE935E92C6924C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4724D3478AC98BDBDBC12FA562826D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3673FB47D791C6AD8458098ED212171 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0841C8DF53BA5C5D246EF3613B34C57C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				771A3043080B67BC2D1F44C9DC2546D0 /* VegaScrollFlowLayout.modulemap */,
+				03C68B7B5CB365C812D2C4BBA1B30BFC /* VegaScrollFlowLayout-dummy.m */,
+				D7D4316679E805587EC922CC9651B504 /* VegaScrollFlowLayout-Info.plist */,
+				A6E617DDE382BA57F872B488C27DFF14 /* VegaScrollFlowLayout-prefix.pch */,
+				F85B99F79D9063B48A0BD504D2C0D090 /* VegaScrollFlowLayout-umbrella.h */,
+				0FD30E91D64AAA21E406CD4CA611014A /* VegaScrollFlowLayout.debug.xcconfig */,
+				6F24348FD125E0F5068E13ECDD87695D /* VegaScrollFlowLayout.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VegaScrollFlowLayout";
+			sourceTree = "<group>";
+		};
+		0D82A13548D3887A9BCD8184342CB9FA /* Pods-RapidWeather */ = {
+			isa = PBXGroup;
+			children = (
+				2041C42796A53D6FAB1832CCE5453B80 /* Pods-RapidWeather.modulemap */,
+				0D67DF63C5657601E4E6D4F85F8481BA /* Pods-RapidWeather-acknowledgements.markdown */,
+				D15157640AC250DE2D7F0B2BE150E668 /* Pods-RapidWeather-acknowledgements.plist */,
+				78E339FFACE445FD39204791D0B0832E /* Pods-RapidWeather-dummy.m */,
+				909554D82E31B0C4F4DEDF1BAD2BE177 /* Pods-RapidWeather-frameworks.sh */,
+				9BE34CED04C94E9215194ADED0B33ED7 /* Pods-RapidWeather-Info.plist */,
+				F974BDED0E5C4CAFC32A26639FC4EB82 /* Pods-RapidWeather-umbrella.h */,
+				90DDCF24E4C988C2144B7622397C85BB /* Pods-RapidWeather.debug.xcconfig */,
+				F71550E74E034AC3872DA2DF1529CF36 /* Pods-RapidWeather.release.xcconfig */,
+			);
+			name = "Pods-RapidWeather";
+			path = "Target Support Files/Pods-RapidWeather";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E5901535F66F01E94C41BE2F7F2B554 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FD674EFD6F242EA79F88787E7CD6B56 /* McPicker.modulemap */,
+				108E726AF4B36A68D6A278EDD55091C7 /* McPicker-dummy.m */,
+				1130A6C6ADF922AD29E5529D21F025A8 /* McPicker-Info.plist */,
+				CFE5C7BC0883ED2612680195C3F482EE /* McPicker-prefix.pch */,
+				9441D4FC13BE10533ED59BD8A5340A27 /* McPicker-umbrella.h */,
+				C0ED2D56896F7E481541077BA4CAD4A4 /* McPicker.debug.xcconfig */,
+				17A80FD93A3F5E9A02BF43BFDFE67B40 /* McPicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/McPicker";
+			sourceTree = "<group>";
+		};
+		404FA0F576C78E81101FAE2403E3BAFE /* McPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C1C839DA81424DB2932E9C2D258F2F1B /* McPicker.swift */,
+				DD5C0B7053557CECF753761E989776ED /* McPickerBarButtonItem.swift */,
+				2922528E58807471B8E6167FD564EFC9 /* McPickerPopoverViewController.swift */,
+				5CCABE3469ECFF88F1BD3BB72D9168A6 /* McTextField.swift */,
+				1E5901535F66F01E94C41BE2F7F2B554 /* Support Files */,
+			);
+			name = McPicker;
+			path = McPicker;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		871D741CFAAB4F0867D82A3091CAE63E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				404FA0F576C78E81101FAE2403E3BAFE /* McPicker */,
+				D5472D2A2750A1A3AE2524665AE17965 /* VegaScrollFlowLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8CE1673DCF44A1E6CF6979A4F6648C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				978909736F92A0D633842472D577F1D8 /* McPicker.framework */,
+				EEFB48FB9F4BE99CB982F74BDA4770B3 /* Pods_RapidWeather.framework */,
+				1B11AF28FB2116EF4B6E72E15E8511FE /* VegaScrollFlowLayout.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B998A7FBEB3CFEDC779ABECE614EF76B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D82A13548D3887A9BCD8184342CB9FA /* Pods-RapidWeather */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				871D741CFAAB4F0867D82A3091CAE63E /* Pods */,
+				8CE1673DCF44A1E6CF6979A4F6648C06 /* Products */,
+				B998A7FBEB3CFEDC779ABECE614EF76B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5472D2A2750A1A3AE2524665AE17965 /* VegaScrollFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				70812E67B88BD777223535EBCE02C4B1 /* VegaScrollFlowLayout.swift */,
+				0841C8DF53BA5C5D246EF3613B34C57C /* Support Files */,
+			);
+			name = VegaScrollFlowLayout;
+			path = VegaScrollFlowLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3AF200BD119821C6C87183ADE389AFC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934098640F45C8DD945A8F3194C046CD /* Pods-RapidWeather-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413DDF4E237DF32F5BE04F3727707243 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E190ED8DF63A3F6AF59E92C202883A1E /* McPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1C5F612486D0AF176750FF004075CFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7113990EADDCBCF82B361D88FCED2953 /* VegaScrollFlowLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59154ACCAAC620B3F26AEABE2FC6C74B /* Pods-RapidWeather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E221D99296E54ACE90530EBA3B6CDB32 /* Build configuration list for PBXNativeTarget "Pods-RapidWeather" */;
+			buildPhases = (
+				3AF200BD119821C6C87183ADE389AFC6 /* Headers */,
+				E8E590C6047D509D1412F721CC468F6C /* Sources */,
+				2EF9FFD3932EBA0A78EB0F601D1918C3 /* Frameworks */,
+				DA71590318E88A5676C411DF1FCC2977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9130C208CDAA81792FD836CA36F09AAB /* PBXTargetDependency */,
+				82CCD3466DEE65C9E6BFCFCF1803090D /* PBXTargetDependency */,
+			);
+			name = "Pods-RapidWeather";
+			productName = "Pods-RapidWeather";
+			productReference = EEFB48FB9F4BE99CB982F74BDA4770B3 /* Pods_RapidWeather.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6738B61255F4E5F64DBC885C2955BE0F /* VegaScrollFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4ABB816AB029C80F690D4E5200B58F9 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */;
+			buildPhases = (
+				F1C5F612486D0AF176750FF004075CFA /* Headers */,
+				966C1BD2F6EF035DC6CCFC1380FE4B78 /* Sources */,
+				4724D3478AC98BDBDBC12FA562826D5D /* Frameworks */,
+				6B62542F3F3CF4CE4E4154A80E27F8ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VegaScrollFlowLayout;
+			productName = VegaScrollFlowLayout;
+			productReference = 1B11AF28FB2116EF4B6E72E15E8511FE /* VegaScrollFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9FB907AAFDB0530AEA6CA76A05AE3BBC /* McPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32729B6AE4307C82952A335A500FFB79 /* Build configuration list for PBXNativeTarget "McPicker" */;
+			buildPhases = (
+				413DDF4E237DF32F5BE04F3727707243 /* Headers */,
+				1FBADE375DD6822591B3CF9131655DAC /* Sources */,
+				31959D1C00A926BA91A8FA3C418A9712 /* Frameworks */,
+				3B345E60F661BE136BF2F1775853D732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = McPicker;
+			productName = McPicker;
+			productReference = 978909736F92A0D633842472D577F1D8 /* McPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8CE1673DCF44A1E6CF6979A4F6648C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FB907AAFDB0530AEA6CA76A05AE3BBC /* McPicker */,
+				59154ACCAAC620B3F26AEABE2FC6C74B /* Pods-RapidWeather */,
+				6738B61255F4E5F64DBC885C2955BE0F /* VegaScrollFlowLayout */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B345E60F661BE136BF2F1775853D732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B62542F3F3CF4CE4E4154A80E27F8ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA71590318E88A5676C411DF1FCC2977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FBADE375DD6822591B3CF9131655DAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37C47729A94B2BA55CEF409A40A06377 /* McPicker-dummy.m in Sources */,
+				1EF4C8F62BE00557CC54FE5CA6CCDC80 /* McPicker.swift in Sources */,
+				8E1AE6A104A2BAA6F8CF3AACC0783690 /* McPickerBarButtonItem.swift in Sources */,
+				99E044835C1683A9015FDE042CD44314 /* McPickerPopoverViewController.swift in Sources */,
+				B24DAD907879F3AAFBE5FB4752DEF0E5 /* McTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966C1BD2F6EF035DC6CCFC1380FE4B78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B293982645E0D238781C47BB6D4459D9 /* VegaScrollFlowLayout-dummy.m in Sources */,
+				1E0C73A80A9F07F78DD476B48CBEB6AE /* VegaScrollFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E590C6047D509D1412F721CC468F6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18613FA31EE1C5E2058D957E559306DB /* Pods-RapidWeather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82CCD3466DEE65C9E6BFCFCF1803090D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VegaScrollFlowLayout;
+			target = 6738B61255F4E5F64DBC885C2955BE0F /* VegaScrollFlowLayout */;
+			targetProxy = 7D0EA54B2E106AB4BA9AE8706E7BD70D /* PBXContainerItemProxy */;
+		};
+		9130C208CDAA81792FD836CA36F09AAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = McPicker;
+			target = 9FB907AAFDB0530AEA6CA76A05AE3BBC /* McPicker */;
+			targetProxy = F908882578503617AF57001403CB77CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09C2E136F0BA5EE1AA0C0EC41A1425DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0ED2D56896F7E481541077BA4CAD4A4 /* McPicker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/McPicker/McPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McPicker/McPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
+				PRODUCT_MODULE_NAME = McPicker;
+				PRODUCT_NAME = McPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		64A9236BE32F761A962057ED00327825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F24348FD125E0F5068E13ECDD87695D /* VegaScrollFlowLayout.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9518DADC29979DAD9FA21979B427D1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DDCF24E4C988C2144B7622397C85BB /* Pods-RapidWeather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RapidWeather/Pods-RapidWeather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RapidWeather/Pods-RapidWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA23E948AA2B26D621160FFBED089916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F71550E74E034AC3872DA2DF1529CF36 /* Pods-RapidWeather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RapidWeather/Pods-RapidWeather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RapidWeather/Pods-RapidWeather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5024FEAE965313B4BAB0928863B8310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD30E91D64AAA21E406CD4CA611014A /* VegaScrollFlowLayout.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VegaScrollFlowLayout/VegaScrollFlowLayout.modulemap";
+				PRODUCT_MODULE_NAME = VegaScrollFlowLayout;
+				PRODUCT_NAME = VegaScrollFlowLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4FE2CD348FA812DDE89E754096A42B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17A80FD93A3F5E9A02BF43BFDFE67B40 /* McPicker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/McPicker/McPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/McPicker/McPicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/McPicker/McPicker.modulemap";
+				PRODUCT_MODULE_NAME = McPicker;
+				PRODUCT_NAME = McPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32729B6AE4307C82952A335A500FFB79 /* Build configuration list for PBXNativeTarget "McPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09C2E136F0BA5EE1AA0C0EC41A1425DA /* Debug */,
+				F4FE2CD348FA812DDE89E754096A42B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4ABB816AB029C80F690D4E5200B58F9 /* Build configuration list for PBXNativeTarget "VegaScrollFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5024FEAE965313B4BAB0928863B8310 /* Debug */,
+				64A9236BE32F761A962057ED00327825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E221D99296E54ACE90530EBA3B6CDB32 /* Build configuration list for PBXNativeTarget "Pods-RapidWeather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9518DADC29979DAD9FA21979B427D1D9 /* Debug */,
+				BA23E948AA2B26D621160FFBED089916 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
