@@ -6,7 +6,7 @@ The application provides with weather details to the user for the location at wh
 - Humidity
 - Wind Speed
 
-<img src = "https://user-images.githubusercontent.com/8428816/115151994-f28b1980-a08c-11eb-9279-66e3f76ee24c.PNG" height="200">
+<img src = "https://user-images.githubusercontent.com/8428816/115151994-f28b1980-a08c-11eb-9279-66e3f76ee24c.PNG" height="500">
 
 
 The user can also see future forecast for the location upto 3 days, configurable by the user
