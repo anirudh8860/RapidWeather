@@ -18,14 +18,14 @@ struct Hour: Codable {
     let windDir: String
     let pressureMB: Int
     let pressureIn: Double
-    let precipMm, precipIn, humidity, cloud: Int
+    let precipMm, precipIn, humidity, cloud: Double
     let feelslikeC, feelslikeF, windchillC, windchillF: Double
     let heatindexC, heatindexF, dewpointC, dewpointF: Double
     let willItRain: Int
     let chanceOfRain: String
     let willItSnow: Int
     let chanceOfSnow: String
-    let visKM, visMiles: Int
+    let visKM, visMiles: Double
     let gustMph, gustKph: Double
     let uv: Int
 

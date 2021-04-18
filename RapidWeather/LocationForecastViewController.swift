@@ -88,7 +88,7 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
                 self.isError = true
                 var message = ""
                 if !(self.currentLocationForecastData.isEmpty) {
-                    message = "Showing previous cached data"
+                    message = "\(error.localizedDescription) Showing previous cached data"
                 } else {
                     message = error.localizedDescription
                 }

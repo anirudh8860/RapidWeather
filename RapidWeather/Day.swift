@@ -10,7 +10,7 @@ import Foundation
 struct Day: Codable {
     let maxtempC, maxtempF, mintempC, mintempF: Double
     let avgtempC, avgtempF, maxwindMph, maxwindKph: Double
-    let totalprecipMm, totalprecipIn, avgvisKM, avgvisMiles: Int
+    let totalprecipMm, totalprecipIn, avgvisKM, avgvisMiles: Double
     let avghumidity, dailyWillItRain: Int
     let dailyChanceOfRain: String
     let dailyWillItSnow: Int
