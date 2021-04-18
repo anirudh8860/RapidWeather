@@ -70,10 +70,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         pickerViewData = group[entityVal[indexPath.row]] ?? []
         let mcPicker = McPicker(data: [pickerViewData])
         mcPicker.showsSelectionIndicator = true
-        let customLabel = UILabel()
-        customLabel.textAlignment = .center
-        customLabel.textColor = .black
-        mcPicker.label = customLabel
+        let pickerLabel = UILabel()
+        pickerLabel.textAlignment = .center
+        pickerLabel.textColor = .black
+        mcPicker.label = pickerLabel
         mcPicker.show(
             doneHandler: {
             (selections: [Int : String]) -> Void in
