@@ -70,6 +70,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         pickerViewData = group[entityVal[indexPath.row]] ?? []
         let mcPicker = McPicker(data: [pickerViewData])
         mcPicker.showsSelectionIndicator = true
+        let customLabel = UILabel()
+        customLabel.textAlignment = .center
+        customLabel.textColor = .black
+        mcPicker.label = customLabel
         mcPicker.show(
             doneHandler: {
             (selections: [Int : String]) -> Void in
@@ -82,6 +86,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         }, cancelHandler: {
             self.getUserDefaults(self.pickerViewEntity)
         })
+        
     }
     
     func setUserDefaultsFromSelection(_ value: String) {
