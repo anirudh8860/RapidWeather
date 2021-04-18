@@ -60,4 +60,12 @@ extension UIViewController {
         let image = UIImage(named: self.getWeatherCode(icon: icon, isDay: isDay))
         return (image?.pngData())!
     }
+    
+    func isDarkModeEnabled() -> Bool {
+        if #available(iOS 13.0, *) {
+            return UITraitCollection.current.userInterfaceStyle == .dark
+        } else {
+            return false
+        }
+    }
 }

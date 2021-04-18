@@ -23,6 +23,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     var pickerViewEntity: String!
     var pickerViewData = [String]()
     let defaults = UserDefaults.standard
+    var mcPicker: McPicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,13 +69,10 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         pickerViewEntity = entityVal[indexPath.row]
         pickerViewData = group[entityVal[indexPath.row]] ?? []
-        let mcPicker = McPicker(data: [pickerViewData])
-        mcPicker.showsSelectionIndicator = true
-        let pickerLabel = UILabel()
-        pickerLabel.textAlignment = .center
-        pickerLabel.textColor = .black
-        mcPicker.label = pickerLabel
-        mcPicker.show(
+        mcPicker = McPicker(data: [pickerViewData])
+        mcPicker?.showsSelectionIndicator = true
+        mcPicker?.pickerBackgroundColor = self.isDarkModeEnabled() ? .black : .white
+        mcPicker?.show(
             doneHandler: {
             (selections: [Int : String]) -> Void in
             if let value = selections[0] {
@@ -97,5 +95,12 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     func getUserDefaults(_ key: String) {
         defaults.string(forKey: key)
         self.settingsTableView.reloadData()
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        if (mcPicker != nil) {
+            mcPicker?.pickerBackgroundColor = self.isDarkModeEnabled() ? .black : .white
+        }
     }
 }
