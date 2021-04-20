@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import McPicker
+import WidgetKit
 
 class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -23,6 +24,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     var pickerViewEntity: String!
     var pickerViewData = [String]()
     let defaults = UserDefaults.standard
+    let userDefaults = UserDefaults(suiteName: "group.RapidWeatherUserDefaults")
     var mcPicker: McPicker?
     
     override func viewDidLoad() {
@@ -89,7 +91,9 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func setUserDefaultsFromSelection(_ value: String) {
         defaults.set(value, forKey: self.pickerViewEntity)
+        userDefaults?.set(value, forKey: self.pickerViewEntity)
         self.settingsTableView.reloadData()
+        WidgetCenter.shared.reloadAllTimelines()
     }
     
     func getUserDefaults(_ key: String) {

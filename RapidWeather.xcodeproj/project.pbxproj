@@ -33,11 +33,43 @@
 		CEBDA80026288D8300382A61 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDA7FF26288D8300382A61 /* SettingsViewController.swift */; };
 		CEBDA8072629805900382A61 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDA8062629805900382A61 /* SettingsCell.swift */; };
 		CEBDA80A262980A500382A61 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBDA809262980A500382A61 /* Cell.swift */; };
+		CED505EA262D996500BF7F72 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBDA81D262A006900382A61 /* WidgetKit.framework */; };
+		CED505EB262D996500BF7F72 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBDA81F262A006900382A61 /* SwiftUI.framework */; };
+		CED505EE262D996600BF7F72 /* RapidWeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED505ED262D996600BF7F72 /* RapidWeatherWidget.swift */; };
+		CED505F1262D996700BF7F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED505F0262D996700BF7F72 /* Assets.xcassets */; };
+		CED505F3262D996700BF7F72 /* RapidWeatherWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CED505EF262D996600BF7F72 /* RapidWeatherWidget.intentdefinition */; };
+		CED505F4262D996700BF7F72 /* RapidWeatherWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = CED505EF262D996600BF7F72 /* RapidWeatherWidget.intentdefinition */; };
+		CED505F7262D996700BF7F72 /* RapidWeatherWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CED505E9262D996500BF7F72 /* RapidWeatherWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CEF047D8262AC762008674A3 /* RapidWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEF047D6262AC762008674A3 /* RapidWeather.xcdatamodeld */; };
 		CEF047DC262AC99B008674A3 /* CurrentLocationForecast+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF047DB262AC99B008674A3 /* CurrentLocationForecast+Extension.swift */; };
 		CEF047DF262AC9AB008674A3 /* CurrentLocationWeather+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF047DE262AC9AB008674A3 /* CurrentLocationWeather+Extension.swift */; };
 		CEF047E2262ADB52008674A3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF047E1262ADB52008674A3 /* DataController.swift */; };
+		CEF4B14C262EDBC3001176A2 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182F8C2625B25E00B62567 /* CurrentWeather.swift */; };
+		CEF4B14F262EDBE4001176A2 /* CurrentWeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182F8F2625B29E00B62567 /* CurrentWeatherCondition.swift */; };
+		CEF4B152262EDBE6001176A2 /* CurrentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FBE2626E38B00B62567 /* CurrentCondition.swift */; };
+		CEF4B155262EDBEB001176A2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182F972625B32A00B62567 /* Location.swift */; };
+		CEF4B158262EDDBB001176A2 /* RapidWeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182F6A262584FE00B62567 /* RapidWeatherClient.swift */; };
+		CEF4B15F262EDEED001176A2 /* WidgetLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4B15B262EDEBD001176A2 /* WidgetLocationManager.swift */; };
+		CEF4B164262EE739001176A2 /* ForecastReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FCF2626FE7900B62567 /* ForecastReport.swift */; };
+		CEF4B167262EE73C001176A2 /* CurrentForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FE6262703F100B62567 /* CurrentForecast.swift */; };
+		CEF4B16A262EE73E001176A2 /* ForecastCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FE92627042800B62567 /* ForecastCondition.swift */; };
+		CEF4B16D262EE73F001176A2 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FEC2627049800B62567 /* Forecast.swift */; };
+		CEF4B170262EE741001176A2 /* ForecastDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FEF262704BF00B62567 /* ForecastDay.swift */; };
+		CEF4B173262EE743001176A2 /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FF2262704E400B62567 /* Astro.swift */; };
+		CEF4B176262EE745001176A2 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FF52627050C00B62567 /* Day.swift */; };
+		CEF4B179262EE748001176A2 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE182FF92627053300B62567 /* Hour.swift */; };
+		CEF4B181262EFF48001176A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE182F5B2625832000B62567 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED505F5262D996700BF7F72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE182F472625831E00B62567 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED505E8262D996500BF7F72;
+			remoteInfo = RapidWeatherWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CEBDA82D262A006B00382A61 /* Embed App Extensions */ = {
@@ -46,6 +78,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				CED505F7262D996700BF7F72 /* RapidWeatherWidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,11 +117,18 @@
 		CEBDA809262980A500382A61 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		CEBDA81D262A006900382A61 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		CEBDA81F262A006900382A61 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CED505D1262D98AB00BF7F72 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		CED505E9262D996500BF7F72 /* RapidWeatherWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RapidWeatherWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED505ED262D996600BF7F72 /* RapidWeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidWeatherWidget.swift; sourceTree = "<group>"; };
+		CED505EF262D996600BF7F72 /* RapidWeatherWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RapidWeatherWidget.intentdefinition; sourceTree = "<group>"; };
+		CED505F0262D996700BF7F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED505F2262D996700BF7F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE2F294262C4A1200E00B6A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CEF047D7262AC762008674A3 /* RapidWeather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RapidWeather.xcdatamodel; sourceTree = "<group>"; };
 		CEF047DB262AC99B008674A3 /* CurrentLocationForecast+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentLocationForecast+Extension.swift"; sourceTree = "<group>"; };
 		CEF047DE262AC9AB008674A3 /* CurrentLocationWeather+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrentLocationWeather+Extension.swift"; sourceTree = "<group>"; };
 		CEF047E1262ADB52008674A3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CEF4B15B262EDEBD001176A2 /* WidgetLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLocationManager.swift; sourceTree = "<group>"; };
 		E236C7CF49C0F0307423296A /* Pods-RapidWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RapidWeather.debug.xcconfig"; path = "Target Support Files/Pods-RapidWeather/Pods-RapidWeather.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +141,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CED505E6262D996500BF7F72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED505EB262D996500BF7F72 /* SwiftUI.framework in Frameworks */,
+				CED505EA262D996500BF7F72 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +159,7 @@
 				9B93AD0961FF86297FD81B22 /* Pods_RapidWeather.framework */,
 				CEBDA81D262A006900382A61 /* WidgetKit.framework */,
 				CEBDA81F262A006900382A61 /* SwiftUI.framework */,
+				CED505D1262D98AB00BF7F72 /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				CE182F512625831E00B62567 /* RapidWeather */,
+				CED505EC262D996500BF7F72 /* RapidWeatherWidget */,
 				CE182F502625831E00B62567 /* Products */,
 				AB20B79F5CF87E25323F12A8 /* Pods */,
 				A2613F5FE906903A4B70012D /* Frameworks */,
@@ -137,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				CE182F4F2625831E00B62567 /* RapidWeather.app */,
+				CED505E9262D996500BF7F72 /* RapidWeatherWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -208,6 +260,18 @@
 			name = Response;
 			sourceTree = "<group>";
 		};
+		CED505EC262D996500BF7F72 /* RapidWeatherWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CED505ED262D996600BF7F72 /* RapidWeatherWidget.swift */,
+				CED505EF262D996600BF7F72 /* RapidWeatherWidget.intentdefinition */,
+				CED505F0262D996700BF7F72 /* Assets.xcassets */,
+				CED505F2262D996700BF7F72 /* Info.plist */,
+				CEF4B15B262EDEBD001176A2 /* WidgetLocationManager.swift */,
+			);
+			path = RapidWeatherWidget;
+			sourceTree = "<group>";
+		};
 		CEF047D5262AC74E008674A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,11 +308,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				CED505F6262D996700BF7F72 /* PBXTargetDependency */,
 			);
 			name = RapidWeather;
 			productName = RapidWeather;
 			productReference = CE182F4F2625831E00B62567 /* RapidWeather.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CED505E8262D996500BF7F72 /* RapidWeatherWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED505F8262D996700BF7F72 /* Build configuration list for PBXNativeTarget "RapidWeatherWidgetExtension" */;
+			buildPhases = (
+				CED505E5262D996500BF7F72 /* Sources */,
+				CED505E6262D996500BF7F72 /* Frameworks */,
+				CED505E7262D996500BF7F72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapidWeatherWidgetExtension;
+			productName = RapidWeatherWidgetExtension;
+			productReference = CED505E9262D996500BF7F72 /* RapidWeatherWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -260,6 +342,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					CE182F4E2625831E00B62567 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CED505E8262D996500BF7F72 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -278,6 +363,7 @@
 			projectRoot = "";
 			targets = (
 				CE182F4E2625831E00B62567 /* RapidWeather */,
+				CED505E8262D996500BF7F72 /* RapidWeatherWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -290,6 +376,15 @@
 				CE182F5F2625832000B62567 /* LaunchScreen.storyboard in Resources */,
 				CE182F5C2625832000B62567 /* Assets.xcassets in Resources */,
 				CE182F5A2625831E00B62567 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED505E7262D996500BF7F72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4B181262EFF48001176A2 /* Assets.xcassets in Resources */,
+				CED505F1262D996700BF7F72 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +442,7 @@
 				CE182FEA2627042800B62567 /* ForecastCondition.swift in Sources */,
 				CEBDA80026288D8300382A61 /* SettingsViewController.swift in Sources */,
 				CE182FFA2627053300B62567 /* Hour.swift in Sources */,
+				CED505F4262D996700BF7F72 /* RapidWeatherWidget.intentdefinition in Sources */,
 				CE182F8D2625B25E00B62567 /* CurrentWeather.swift in Sources */,
 				CE182F982625B32A00B62567 /* Location.swift in Sources */,
 				CEF047DF262AC9AB008674A3 /* CurrentLocationWeather+Extension.swift in Sources */,
@@ -371,7 +467,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CED505E5262D996500BF7F72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF4B170262EE741001176A2 /* ForecastDay.swift in Sources */,
+				CED505F3262D996700BF7F72 /* RapidWeatherWidget.intentdefinition in Sources */,
+				CEF4B16A262EE73E001176A2 /* ForecastCondition.swift in Sources */,
+				CEF4B179262EE748001176A2 /* Hour.swift in Sources */,
+				CEF4B152262EDBE6001176A2 /* CurrentCondition.swift in Sources */,
+				CEF4B14C262EDBC3001176A2 /* CurrentWeather.swift in Sources */,
+				CEF4B16D262EE73F001176A2 /* Forecast.swift in Sources */,
+				CEF4B14F262EDBE4001176A2 /* CurrentWeatherCondition.swift in Sources */,
+				CEF4B167262EE73C001176A2 /* CurrentForecast.swift in Sources */,
+				CEF4B176262EE745001176A2 /* Day.swift in Sources */,
+				CEF4B155262EDBEB001176A2 /* Location.swift in Sources */,
+				CEF4B158262EDDBB001176A2 /* RapidWeatherClient.swift in Sources */,
+				CEF4B15F262EDEED001176A2 /* WidgetLocationManager.swift in Sources */,
+				CEF4B173262EE743001176A2 /* Astro.swift in Sources */,
+				CED505EE262D996600BF7F72 /* RapidWeatherWidget.swift in Sources */,
+				CEF4B164262EE739001176A2 /* ForecastReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED505F6262D996700BF7F72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED505E8262D996500BF7F72 /* RapidWeatherWidgetExtension */;
+			targetProxy = CED505F5262D996700BF7F72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE182F582625831E00B62567 /* Main.storyboard */ = {
@@ -513,8 +640,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E236C7CF49C0F0307423296A /* Pods-RapidWeather.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RapidWeather/RapidWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T57P3XVMVR;
 				INFOPLIST_FILE = RapidWeather/Info.plist;
@@ -533,8 +662,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B05C5F765AA4265892C52ED /* Pods-RapidWeather.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RapidWeather/RapidWeather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T57P3XVMVR;
 				INFOPLIST_FILE = RapidWeather/Info.plist;
@@ -544,6 +675,50 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.simplegamer003.RapidWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CED505F9262D996700BF7F72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = RapidWeatherWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T57P3XVMVR;
+				INFOPLIST_FILE = RapidWeatherWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplegamer003.RapidWeather.RapidWeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CED505FA262D996700BF7F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = RapidWeatherWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T57P3XVMVR;
+				INFOPLIST_FILE = RapidWeatherWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simplegamer003.RapidWeather.RapidWeatherWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -566,6 +741,15 @@
 			buildConfigurations = (
 				CE182F642625832000B62567 /* Debug */,
 				CE182F652625832000B62567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED505F8262D996700BF7F72 /* Build configuration list for PBXNativeTarget "RapidWeatherWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED505F9262D996700BF7F72 /* Debug */,
+				CED505FA262D996700BF7F72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
