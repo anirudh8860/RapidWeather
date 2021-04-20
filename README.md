@@ -27,3 +27,9 @@ Before running the project, here are the steps:
 
 ![Image 20](https://user-images.githubusercontent.com/8428816/115152014-0d5d8e00-a08d-11eb-829b-0f1ed8028810.gif)
 
+Also, a new widget is being added in the app showing:
+- Location
+- Weather Condition
+- Temperature
+
+<img width="167" alt="Screenshot 2021-04-20 at 8 07 44 PM" src="https://user-images.githubusercontent.com/8428816/115415398-82a79b00-a214-11eb-9d2c-3b1be099bcf8.png">
