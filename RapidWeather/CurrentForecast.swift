@@ -18,9 +18,9 @@ struct CurrentForecast: Codable {
     let windDir: String
     let pressureMB: Int
     let pressureIn: Double
-    let precipMm, precipIn, humidity, cloud: Int
+    let precipMm, precipIn, humidity, cloud: Double
     let feelslikeC, feelslikeF: Double
-    let visKM, visMiles, uv: Int
+    let visKM, visMiles, uv: Double
     let gustMph, gustKph: Double
 
     enum CodingKeys: String, CodingKey {
