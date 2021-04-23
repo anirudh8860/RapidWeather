@@ -193,16 +193,30 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MJQ-ID-bQc">
-                        <barButtonItem key="leftBarButtonItem" image="arrow.clockwise" catalog="system" id="HXb-rO-DcI" userLabel="Refresh">
-                            <connections>
-                                <action selector="refreshWeather:" destination="xum-cv-Dxv" id="ZrW-1K-jHq"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="settings" id="GSY-uQ-o0c" userLabel="Settings">
-                            <connections>
-                                <segue destination="GUG-T9-HS9" kind="show" id="TVg-fP-RJH"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem image="arrow.clockwise" catalog="system" id="HXb-rO-DcI" userLabel="Refresh">
+                                <connections>
+                                    <action selector="refreshWeather:" destination="xum-cv-Dxv" id="ZrW-1K-jHq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="mappin.and.ellipse" catalog="system" id="9Uc-lB-L0o">
+                                <connections>
+                                    <action selector="showPresentLocationWeather:" destination="xum-cv-Dxv" id="UQk-F4-Men"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <rightBarButtonItems>
+                            <barButtonItem image="settings" id="GSY-uQ-o0c" userLabel="Settings">
+                                <connections>
+                                    <segue destination="GUG-T9-HS9" kind="show" id="TVg-fP-RJH"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="magnifyingglass" catalog="system" id="bwX-2P-Vnc">
+                                <connections>
+                                    <action selector="searchWeather:" destination="xum-cv-Dxv" id="3EA-LH-0Ln"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="airQuality" destination="AuT-ms-dBD" id="YSl-R7-mkO"/>
@@ -302,6 +316,8 @@
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
         <image name="settings" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

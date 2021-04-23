@@ -26,6 +26,6 @@
     </entity>
     <elements>
         <element name="CurrentLocationForecast" positionX="-4323.213134765625" positionY="7343.678527832031" width="128" height="163"/>
-        <element name="CurrentLocationWeather" positionX="-4829.389892578125" positionY="7298.913024902344" width="128" height="223"/>
+        <element name="CurrentLocationWeather" positionX="-4829.389892578125" positionY="7298.913024902344" width="128" height="209"/>
     </elements>
 </model>

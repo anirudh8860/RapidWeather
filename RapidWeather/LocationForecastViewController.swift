@@ -30,7 +30,7 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
         super.viewDidAppear(animated)
         let refresh = UIBarButtonItem(image: UIImage(systemName: "arrow.clockwise"), style: .plain, target: self, action: #selector(refreshList))
         self.navigationItem.rightBarButtonItem = refresh
-        getLocationUpdates()
+        self.getForecast(location: currentLocation!, days: defaults.string(forKey: "Forecast Days") ?? "1")
     }
     
     // Set up location updates to get current location
@@ -68,7 +68,8 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
     // Refresh the weather
     @objc func refreshList() {
         loadingIndicator.isHidden = false
-        locationManager.startUpdatingLocation()
+        self.getForecast(location: currentLocation!, days: defaults.string(forKey: "Forecast Days") ?? "1")
+        //locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -88,18 +89,29 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
                 self.isError = true
                 var message = ""
                 if !(self.currentLocationForecastData.isEmpty) {
-                    message = "\(error.localizedDescription) Showing previous cached data"
+                    if (self.currentLocation != self.currentLocationForecastData[0].location!) {
+                        message = "\(error.localizedDescription) Could not load previous cached data as it does not exist"
+                    } else {
+                        message = "\(error.localizedDescription) Showing previous cached data"
+                    }
                 } else {
                     message = error.localizedDescription
                 }
                 DispatchQueue.main.async {
-                    self.showAlert(title: "Error", message: message)
-                    self.weatherCollectionView.reloadData()
-                    self.loadingIndicator.isHidden = true
+                    if (self.currentLocation != self.currentLocationForecastData[0].location!) {
+                        self.showAlert(title: "Error", message: message)
+                        self.loadingIndicator.isHidden = true
+                    } else {
+                        self.showAlert(title: "Error", message: message)
+                        self.navigationItem.title = "\(self.currentLocationForecastData[0].location!)'s Forecast"
+                        self.weatherCollectionView.reloadData()
+                        self.loadingIndicator.isHidden = true
+                    }
                 }
             } else {
                 self.forecast = forecastReport!.forecast
                 DispatchQueue.main.async {
+                    self.removePreviousCoreDataValues()
                     self.currentLocation = forecastReport!.location.name
                     self.navigationItem.title = "\(self.currentLocation!)'s Forecast"
                     self.weatherCollectionView.reloadData()
@@ -169,7 +181,9 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
     
     // Save values to the core data
     func saveValuesToCoreData(value: Hour, index: Int) {
+        
         let currentForecast = CurrentLocationForecast(context: dataController.viewContext)
+        
         currentForecast.creationDate = Date()
         currentForecast.index = Int32(index)
         currentForecast.date = value.time
@@ -178,7 +192,17 @@ class LocationForecastViewController: UICollectionViewController, CLLocationMana
         currentForecast.temperatureF = "\(value.tempF)°"
         currentForecast.weatherImage = self.imageToData(icon: value.condition.icon, isDay: value.isDay)
         try? dataController.viewContext.save()
+        
         currentLocationForecastData.insert(currentForecast, at: index)
+    }
+    
+    func removePreviousCoreDataValues() {
+        let fetchRequest: NSFetchRequest<CurrentLocationForecast> = CurrentLocationForecast.fetchRequest()
+        if let result = try? dataController.viewContext.fetch(fetchRequest) {
+            for object in result {
+                dataController.viewContext.delete(object)
+            }
+        }
     }
 
 }

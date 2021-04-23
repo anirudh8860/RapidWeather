@@ -31,6 +31,9 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
     var dataController: DataController!
     var currentLocationWeatherData: [CurrentLocationWeather]!
     var isError: Bool = false
+    var searchController: UISearchController!
+    var isFirstLayer: Bool!
+    var firstLayer: CALayer!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -43,11 +46,12 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
     }
     
     override func viewDidLoad() {
         self.navigationItem.title = "Current Weather"
+        isFirstLayer = true
+        
         //Setup fetch request for Core Data
         let fetchRequest: NSFetchRequest<CurrentLocationWeather> = CurrentLocationWeather.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "creationDate", ascending: true)
@@ -55,10 +59,32 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         if let result = try? dataController.viewContext.fetch(fetchRequest) {
             currentLocationWeatherData = result
         }
+        
+        if currentLocationWeatherData.count > 0 {
+            currentLocation = currentLocationWeatherData[0].location;
+            currentLocation = currentLocation!.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+            self.getCurrentWeather(location: currentLocation!)
+        } else {
+            locationManager.startUpdatingLocation()
+        }
     }
     
     @IBAction func refreshWeather(_ sender: Any) {
         self.loadingIndicator.isHidden = false
+        self.getCurrentWeather(location: currentLocation!)
+    }
+    
+    // Search weather of user-entered location
+    @IBAction func searchWeather(_ sender: Any) {
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.hidesNavigationBarDuringPresentation = false
+
+        self.searchController.searchBar.delegate = self
+        present(searchController, animated: true, completion: nil)
+    }
+    
+    // Show weather of current location
+    @IBAction func showPresentLocationWeather(_ sender: Any) {
         locationManager.startUpdatingLocation()
     }
     
@@ -67,6 +93,7 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         let locationForecastViewController = self.storyboard!.instantiateViewController(withIdentifier: "LocationForecastViewController") as! LocationForecastViewController
         locationForecastViewController.isDay = isDay
         locationForecastViewController.dataController = dataController
+        locationForecastViewController.currentLocation = currentLocation
         self.navigationController!.pushViewController(locationForecastViewController, animated: true)
     }
     
@@ -140,8 +167,8 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         } else {
             self.windSpeed.text = "Wind Speed: \(weather!.current.windMph) mph"
         }
-            
-        self.view.layer.insertSublayer(self.setGradientBackground(isDay: self.isDay), at:0)
+        
+        self.setCurrentBackground()
         self.setFontColor(isDay: self.isDay)
         saveValuesToCoreData(weather: weather)
     }
@@ -168,18 +195,36 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         } else {
             self.windSpeed.text = "Wind Speed: \(cachedData.windSpeedMph!)"
         }
-            
-        self.view.layer.insertSublayer(self.setGradientBackground(isDay: isDay), at:0)
+        
+        self.setCurrentBackground()
         self.setFontColor(isDay: isDay)
+    }
+    
+    func setCurrentBackground() {
+        if isFirstLayer {
+            firstLayer = self.setGradientBackground(isDay: self.isDay)
+            self.view.layer.insertSublayer(firstLayer, at:0)
+            isFirstLayer = false
+        } else {
+            let newLayer = self.setGradientBackground(isDay: self.isDay)
+            self.view.layer.insertSublayer(newLayer, above: firstLayer)
+            firstLayer = newLayer
+        }
     }
     
     // Saving values to the Core Data
     func saveValuesToCoreData(weather: CurrentWeather!) {
+        let fetchRequest: NSFetchRequest<CurrentLocationWeather> = CurrentLocationWeather.fetchRequest()
+        if let result = try? dataController.viewContext.fetch(fetchRequest) {
+            for object in result {
+                dataController.viewContext.delete(object)
+            }
+        }
+        
         let currentWeather = CurrentLocationWeather(context: dataController.viewContext)
         
         currentWeather.creationDate = Date()
         currentWeather.aqi = "\(Int(weather.current.airQuality["pm2_5"]!))"
-        currentWeather.creationDate = Date()
         currentWeather.humidity = "\(weather.current.humidity)%"
         currentWeather.location = weather.location.name
         currentWeather.temperatureC = "\(weather.current.tempC)°"
@@ -209,5 +254,19 @@ class CurrentWeatherViewController: UIViewController, CLLocationManagerDelegate,
         self.humidity.textColor = color
         self.windSpeed.textColor = color
         self.showFurtherForecastBtn.setTitleColor(color, for: .normal)
+    }
+}
+
+extension CurrentWeatherViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        let text = searchBar.text
+        self.currentLocation = text!.replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        if (text == "") {
+            self.showAlert(title: "Error", message: "Please enter valid location")
+        } else {
+            //self.loadingIndicator.isHidden = false
+            self.getCurrentWeather(location: self.currentLocation ?? "")
+        }
+        self.searchController.isActive = false
     }
 }
